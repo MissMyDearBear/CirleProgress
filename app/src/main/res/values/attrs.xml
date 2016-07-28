@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--圆形进度条-->
+    <declare-styleable name="RingView">
+        <attr name="outerRing_color" format="color" />
+        <attr name="innerRing_radius" format="dimension"></attr>
+        <attr name="outerRing_radius" format="dimension" />
+        <attr name="outerRing_width" format="dimension" />
+        />
+    </declare-styleable>
+</resources>

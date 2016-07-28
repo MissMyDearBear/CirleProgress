@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="152dp"
+        android:layout_weight="1"
+        android:paddingBottom="22dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:background="#00000000"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_data_used"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="3000"
+                android:textColor="#79a7f2"
+                android:textSize="21sp" />
+
+            <TextView
+                android:id="@+id/tv_data_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5000"
+                android:textColor="@color/color_text_gray"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+        <demp.cjx.com.cirleprogress.RingView
+            android:id="@+id/rv_data"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_centerHorizontal="true"
+            app:innerRing_radius="45dp"
+            app:outerRing_radius="46dp"
+            app:outerRing_width="3dp">
+
+        </demp.cjx.com.cirleprogress.RingView>
+
+        <TextView
+            android:id="@+id/tv_combo_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="导出数据"
+            android:textColor="#585a68"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+</LinearLayout>
